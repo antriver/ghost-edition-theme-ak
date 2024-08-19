@@ -5,8 +5,10 @@ body:not(.with-full-cover) .cover {
 .with-full-cover .cover {
     position: relative;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .with-full-cover .cover.half {
@@ -22,7 +24,7 @@ body:not(.with-full-cover) .cover {
     z-index: 10;
     content: "";
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.6;
     transition: opacity 1.5s ease;
 }
 
@@ -58,12 +60,42 @@ body:not(.with-full-cover) .cover {
     word-break: break-word;
 }
 
+.cover-btns {
+    margin-top: 30px;
+}
+
+.cover-btns__btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    margin: 10px;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+
 .has-serif-title .cover-description {
     font-family: var(--font-serif);
 }
 
 .with-full-cover .cover-description {
     color: #fff;
+}
+
+.cover-photo {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.cover-photo,
+.cover-btns__btn {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .cover-cta {
