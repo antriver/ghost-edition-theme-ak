@@ -15,5 +15,5 @@
 
 .gh-head-menu {
     justify-content: center;
-    margin: 0;
+    margin: 0 !important;
 }
