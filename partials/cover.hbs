@@ -12,6 +12,12 @@
 
                 Hi, I'm Anthony, a software engineer, entrepreneur, and traveller.
 
+                {{#unless @member}}
+                    {{#if @custom.email_signup_text}}
+                        {{@custom.email_signup_text}}
+                    {{/if}}
+                {{/unless}}
+
                 <div class="cover-btns">
                     <a class="cover-btns__btn"
                        href="https://github.com/antriver"
