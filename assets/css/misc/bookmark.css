@@ -1,0 +1,18 @@
+.kg-bookmark-container {
+    min-height: 150px;
+}
+
+.kg-bookmark-content {
+    /* Vertically center */
+    justify-content: center;
+}
+
+.kg-bookmark-metadata {
+    display: none;
+}
+
+.kg-bookmark-title {
+    /* Improve vertical center look */
+    margin-top: -2px;
+    font-size: 1.1em;
+}
