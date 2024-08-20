@@ -5,38 +5,37 @@
 
     <div class="cover-content">
         {{#if @site.description}}
+            <img src="https://ctrlv.in/img/ak-320.jpg"
+                 alt="Photo of Anthony Kuske"
+                 class="cover-photo" />
+
             <div class="cover-description">
-                <img src="https://ctrlv.in/img/ak.jpg"
-                     alt="Photo of Anthony Kuske"
-                     class="cover-photo" />
-
                 Hi, I'm Anthony, a software engineer, entrepreneur, and traveller.
-
                 {{#unless @member}}
                     {{#if @custom.email_signup_text}}
                         {{@custom.email_signup_text}}
                     {{/if}}
                 {{/unless}}
+            </div>
 
-                <div class="cover-btns">
-                    <a class="cover-btns__btn"
-                       href="https://github.com/antriver"
-                       title="Github"
-                       target="_blank">
-                        <i class="fab fa-fw fa-github"></i>
-                    </a>
-                    <a class="cover-btns__btn"
-                       href="https://stackoverflow.com/users/710630/antriver"
-                       title="Stack Overflow"
-                       target="_blank">
-                        <i class="fab fa-fw fa-stack-overflow"></i>
-                    </a>
-                    <a class="cover-btns__btn"
-                       href="mailto:mail@anthonykuske.com"
-                       title="Email">
-                        <i class="fas fa-fw fa-envelope"></i>
-                    </a>
-                </div>
+            <div class="cover-btns">
+                <a class="cover-btns__btn"
+                   href="https://github.com/antriver"
+                   title="Github"
+                   target="_blank">
+                    <i class="fab fa-fw fa-github"></i>
+                </a>
+                <a class="cover-btns__btn"
+                   href="https://stackoverflow.com/users/710630/antriver"
+                   title="Stack Overflow"
+                   target="_blank">
+                    <i class="fab fa-fw fa-stack-overflow"></i>
+                </a>
+                <a class="cover-btns__btn"
+                   href="mailto:mail@anthonykuske.com"
+                   title="Email">
+                    <i class="fas fa-fw fa-envelope"></i>
+                </a>
             </div>
         {{/if}}
 
