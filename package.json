@@ -63,7 +63,7 @@
                 ],
                 "default": "Modern sans-serif"
             },
-            "email_signup_text": {
+            "cover_description": {
                 "type": "text",
                 "group": "homepage"
             },

@@ -7,6 +7,10 @@
     font-weight: 800;
 }
 
+.gh-head-logo img {
+    border-radius: 50%;
+}
+
 .gh-head-menu,
 .gh-head-actions {
     font-size: 1.5rem;
@@ -16,4 +20,25 @@
 .gh-head-menu {
     justify-content: center;
     margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    #gh-head .gh-head-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #gh-head .gh-head-brand .gh-head-brand-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Hide header logo on home page */
+.home-template {
+    .gh-head-brand-wrapper img {
+        display: none;
+    }
 }
