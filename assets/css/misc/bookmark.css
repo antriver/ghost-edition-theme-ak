@@ -1,18 +1,35 @@
+/* Everything needs to be important because styles are injected by JS and override there :( */
+
 .kg-bookmark-container {
-    min-height: 150px;
+    min-height: 150px !important;
 }
 
 .kg-bookmark-content {
     /* Vertically center */
-    justify-content: center;
-}
-
-.kg-bookmark-metadata {
-    display: none;
+    justify-content: center !important;
 }
 
 .kg-bookmark-title {
     /* Improve vertical center look */
-    margin-top: -2px;
-    font-size: 1.1em;
+    margin-top: -2px !important;
+    font-size: 1.1em !important;
+}
+
+.kg-bookmark-description {
+    -webkit-line-clamp: 4 !important;
+    font-size: 1.5rem !important
+}
+
+.kg-bookmark-metadata {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .kg-bookmark-container {
+        flex-direction: column-reverse;
+    }
+
+    .kg-bookmark-thumbnail {
+        height: 300px;
+    }
 }
